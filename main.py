@@ -1,8 +1,5 @@
 import pymem
 from resolver import resolve_pointer_chain
-
-
-
 def main():
     module_base = pymem.process.module_from_name(pm.process_handle, "popcapgame1.exe").lpBaseOfDll
 
@@ -20,5 +17,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
