@@ -8,8 +8,8 @@ def main():
     module_base = pymem.process.module_from_name(
         pm.process_handle, "popcapgame1.exe").lpBaseOfDll
 
-    pointer_base = module_base + 0x0011BC8C
-    offsets = [0x138, 0x40, 0x1758, 0x24, 0x15C, 0x16C, 0x5578]
+    pointer_base = module_base + 0x003E3E70
+    offsets = [0x18, 0x8, 0x20, 0x18, 0x0, 0x8, 0x5578]
 
     print(f"Module base: {hex(module_base)}")
     print(f"Pointer base: {hex(pointer_base)}")
